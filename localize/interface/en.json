@@ -509,6 +509,7 @@
   {"ifi": 609, "text": "Send"},
   {"ifi": 610, "text": "Short message"},
   {"ifi": 611, "text": "Rely"},
+  {"ifi": 612, "text": "Couldn't find the document. Maybe it has been archived"},
   {"ifi": 800, "text": "https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/docs/en/ppsinfo.htm", "bigText": true, "note": "from 800 for documents bigtext links"},
   {"ifi": 1000, "text": "3-50 symbols a-z and 0-9"},
   {"ifi": 1001, "text": "8-50 symbols"},

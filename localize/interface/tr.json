@@ -1896,6 +1896,7 @@
   {"ifi": 609, "text": "Gönder"},
   {"ifi": 610, "text": "Kısa mesaj"},
   {"ifi": 611, "text": "Güven"},
+  {"ifi": 612, "text": "Belge bulunamadı. Belki arşivlenmiştir"},
   {
     "ifi": 800,
     "text": "https://raw.githubusercontent.com/distributed-digiital-nomads/space.diamo.iol.NiXeL-distr/main/docs/en/ppsinfo.htm",
