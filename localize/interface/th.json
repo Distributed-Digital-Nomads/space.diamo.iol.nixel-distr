@@ -2035,6 +2035,7 @@
     "text": "พึ่งพา"
   },
   {"ifi": 612, "text": "ไม่พบเอกสาร อาจเป็นเพราะเอกสารถูกเก็บถาวรแล้ว"},
+  {"ifi": 613, "text": "ขั้นต่ำ"},
   {
     "ifi": 800,
     "text": "https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/docs/th/ppsinfo.htm",
