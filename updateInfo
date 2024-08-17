@@ -1,1 +1,1 @@
-{"ed": 2720, "name": "2.8", "env": "js", "note": "Excluded wrong Google devices", "must":  1}
+{"ed": 2721, "name": "2.8", "env": "js", "note": "Added local app API iaGetGPSLoc", "must":  1}
