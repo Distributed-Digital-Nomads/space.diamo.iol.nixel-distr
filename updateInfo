@@ -1,1 +1,1 @@
-{"ed": 2728, "name": "2.8", "env": "js", "note": "Can convert SINHRO without sub-account", "must": 1}
+{"ed": 2729, "name": "2.8", "env": "js", "note": "Fixes: interaction with iol-apps in Android 11+", "must": 1}
