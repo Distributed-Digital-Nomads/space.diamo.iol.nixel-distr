@@ -53,6 +53,7 @@
   {"ifi": 51, "text": "The format of the QR is not in the NiXeL format. Please, scan QR in the NiXel app only generated in NiXeL!"},
   {"ifi": 52, "text": "https://www.youtube.com/playlist?list=PL2p33rQr33ZWKx7x9kGv0owry1GJgV2xL", "note": "usage guide"},
   {"ifi": 53, "text": "Reset"},
+  {"ifi": 54, "text": "No access to the image"},
   {"ifi": 99, "text": "The feature is coming soon"},
   {"ifi": 100, "text": "Yes"},
   {"ifi": 101, "text": "No"},

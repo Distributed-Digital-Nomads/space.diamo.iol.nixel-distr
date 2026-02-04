@@ -53,6 +53,7 @@
   {"ifi": 51, "text": "Формат это QR не в формате NiXeL. Сканируйте QR в NiXel апп только генерированные в NiXeL!"},
   {"ifi": 52, "text": "https://www.youtube.com/playlist?list=PL2p33rQr33ZWKx7x9kGv0owry1GJgV2xL"},
   {"ifi": 53, "text": "Сброс"},
+  {"ifi": 54, "text": "Нет доступа к изображению"},
   {"ifi": 99, "text": "Это функция скоро будет доступна "},
   {"ifi": 100, "text": "Да"},
   {"ifi": 101, "text": "Нет"},
