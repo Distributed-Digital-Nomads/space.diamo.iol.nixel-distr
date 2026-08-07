@@ -1,0 +1,306 @@
+<b>NiXeL Uygulaması Kullanım Şartları ve Koşulları</b><br>
+2026-07-31 tarihli revizyon<br>
+<br>
+Bu elektronik belge, T0 türünde bir iol Akıllı Sözleşmesidir (bundan böyle </b>Akıllı Sözleşme T0</b> olarak anılacaktır).<br>
+<br>
+<b>Terimler</b><br>
+<br>
+<b>NiXel</b>, The Internet of Labour ekosistemi/platformu (Internet of Labour — kısaca <b>iol</b>) içinde çalışan özel bir ücretsiz yazılımdır. NiXeL, kullanıcıların iol'e kaydolmalarına ve iol olanaklarıyla görsel olarak etkileşime girmelerine olanak tanır. NiXeL'in kendisine ait sunucuları (back-end) yoktur ve çok sayıda üçüncü taraf kütüphane, modül, framework vb. kullanır. NiXeL, iol Akıllı Siparişleri, Akıllı Sözleşmeleri, Akıllı Hesapları ve Akıllı Makbuzları kullanarak kullanıcılar ve iol-app'ler için elektronik belge yönetimi ve muhasebe sağlayan bir Grafik Kullanıcı Arayüzüdür (<b>GUI</b>).<br>
+NiXeL aşağıdaki işlevleri üstlenir:<br>
+- kullanıcıların iol'e kaydı;<br>
+- kullanıcıların <b>iol-apps</b>'lerde yetkilendirilmesi;<br>
+- siparişler, iş durumları, mesajlar, bakiye durumu vb. hakkında bildirimler;<br>
+- zaman hesaplamalarının kontrolü;<br>
+- mesafe hesaplamalarının kontrolü;<br>
+- iol-apps'lerde kullanıcılar tarafından tamamlanan işlerin ödemeleri;<br>
+- iol-apps'lerde yüklenicilerin (işçilerin) ve iş sipariş verenlerin kalite kontrolü — <b>iol-quality</b> mekanizması;<br>
+NiXeL, aşağıdaki olanakları sağlayan dahili bir fon bakiyesine sahiptir:<br>
+- kullanıcılar arasında karşılıklı hesaplaşmalar;<br>
+- para birimi değişimi;<br>
+- NiXeL'deki bakiyenin doldurulması;<br>
+- kullanıcıların kişisel banka bilgilerine fon çekimi.<br>
+<u>NiXeL finansal hizmetler sunmaz</u>, ancak iol'ün ve lisanslı Finansal Hizmet Sağlayıcılarının (<b>FSP</b>) olanaklarını kullanır.<br>
+Ayrıca iol, iol Akıllı Hesaplarına dayalı olarak FSP'lerin katılımı olmadan doğrudan kullanıcılar arasında Kişiden Kişiye (<b>P2P</b>) işlemler gerçekleştirme olanağına sahiptir.<br>
+NiXeL'in tüm olanaklarını sağlamak için aşağıdaki uygulama izinleri gereklidir:<br>
+- bildirimler (push notification);<br>
+- zil seslerinin çalınması — farklı bildirim türleri için zil seslerinizi çalmak için;<br>
+- kamera ve fotoğraflara erişim — profil fotoğrafları yüklemek ve QR kodlarını okumak için;<br>
+- konum (uygulama kapalıyken veya arka plan modundayken dahil) — sipariş yürütülmesi sırasında zamanı ve mesafeyi ve işin başlamasından 1 saat önce sipariş veren/yüklenicinin konumunu hesaplamak için. İşlem günlüğü kaydı için). Ayrıca bu, uygulamayı aktif bir ekranla açık tutmaya kıyasla cihaz kaynaklarınızı çok daha fazla tasarruf ettirir.<br>
+NiXeL olanaklarının geniş yelpazesi, her bir iol-app'e kaydolmaya gerek kalmadığından kullanıcıların zamandan tasarruf etmesini sağlar. Bunlara giriş NiXeL üzerinden gerçekleştirilir. Ayrıca bu:
+- tekrarlayan işlevsellikler NiXeL'de gerçekleştirildiği için iol-apps boyutunu azaltır;
+- kullanıcının ilgilendiği her iol-app'e izin verme ihtiyacı olmadığından, iol-apps kullanırken kullanıcılara güvenlik sağlar;
+- emek ödemesinin güvenilirliğini, para ve varlıkların güvenliğini sağlar;
+- tek bir yerden herhangi bir iol-apps komisyon paylarına katılımı mümkün kılar.<br>
+<br>
+NiXeL sistemi, kullanıcıdan kullanıcıya fon transferi olmadığı için bir ödeme sistemi değildir. Kullanıcı bakiyeleri arasındaki fon hareketi, iol Akıllı Sözleşmeleri tarafından otomatik olarak veya NiXeL kullanıcıları tarafından manuel olarak düzenlenebilen Akıllı Hesaplara dayalı olarak yürütülür. Bu bağlamda NiXeL bir muhasebe sistemi rolü oynar.<br>
+<br>
+NiXeL, https://github.com/Distributed-Digital-Nomads adresinde özel, sanal ve kar amacı gütmeyen bir kurum olarak kayıtlı Distributed Digital Nomads (DDN) kuruluşu altında faaliyet göstermektedir.<br>
+<br>
+<b>iol</b> (The Internet of Labour), küresel işsizlik sorununu çözmek için seçeneklerden biri olan merkeziyetsiz/dağıtık bir ekosistemdir/platformdur. iol, sosyo-ekonomik bir ekosistemdir/platformdur. Dağıtık bir sistem olarak iol; GitHub, dosya ve veri depolama hizmetleri, bulut hizmetleri, blokzincir ve FSP API'leri gibi üçüncü taraf kaynakları kullanır. Ayrıca BloodVessels metodolojisine dayalı dağıtık veritabanı teknolojisini kullanır.<br>
+<br>
+<b>iol-app</b> — iol olanaklarını kullanarak iol ekosistemi içinde çalışan yazılım.<br>
+iol-apps'in temel konsepti şudur: yüklenici (işçi) iş yerine araç gereçleriyle gelmeli ve müşteri için işi gerçekleştirmelidir. Bir iol-app, iol tarafından sağlanan algoritmalardan biriyle çalışabilir:<br>
+- sabit iş ödemesi tutarı;<br>
+- çalışma süresine göre hesaplanan iş ödemesi (saat başına fiyat);<br>
+- mesafeye göre hesaplanan iş ödemesi (metre başına fiyat);<br>
+- zaman ve mesafeye göre hesaplanan iş ödemesi (saat başına fiyat + metre başına fiyat).<br>
+Bir iol-app ticari bir uygulama olabilir ve kullanıcılardan iş ödemelerinden komisyon alacak şekilde yapılandırılabilir. iol-apps'lerde ödenen komisyonlar karşılığında iol, komisyon boyutuyla orantılı miktarda <b>SINHRO</b> üretir ve bunu kullanıcının NiXeL'deki bakiyesine alacak kaydeder. Böylece SINHRO yalnızca gerçek iş yapıldığında ortaya çıkar. Komisyon, kullanıcılara söz konusu iol-app'e yatırdıkları SINHRO ile orantılı olarak dağıtılır. Kullanıcılar, NiXeL bakiyesinin <b>P/PS</b> (Project or Profit Stake) bölümünde SINHRO'larını iol-apps'lere yatırabilir ve iol-apps'lerden çekebilirler. SINHRO, kullanıcıların komisyon dağıtımından pasif gelir elde etmelerini sağlar; bu da örneğin mevsimlik siparişleri olan işçilerin diğer iş türlerinin sağlandığı diğer iol-apps komisyonlarından gelir elde etmelerine olanak tanır.<br>
+Bir iol-app, kullanıcıları için Akıllı Sözleşme T0 ile, <b>iolBuilder</b>'ın "Kullanım Şartları ve Koşulları" ile ve <b>iol-providers</b> koşullarıyla çelişmeyen kendi "Kullanım Şartları ve Koşulları"na sahip olmalıdır.<br>
+Yüklenici işinin ödemesi, <b>"2. İş Hesaplama Prosedürü"</b> bölümünde açıklandığı gibi NiXeL bakiyesinde yürütülür.<br>
+iol-apps'lerin ekosisteme eklenebilme yeteneği, iol'ü bir platform haline getirir.<br>
+NiXeL, özünde özel iol özelliklerine erişimi olan kar amacı gütmeyen bir iol-app'tir. NiXeL, işlevselliğini kullanmak için hiçbir ücret talep etmez ve bakımı yalnızca Yazar telif hakları/bağışları (<b>Royalty/Donation</b>) ile desteklenir.<br>
+<br>
+<b>iol-provider</b> — iolBuilder CLI veya GUI kullanarak çalışan bir iol-app oluşturan bir veya daha fazla yazardan oluşan bir ekip.<br>
+Bir iol-provider, gerçek veya tüzel kişi olabilir ve SaaS olarak bir <b>iol-business</b> kurabilir.
+<br>
+<b>iolBuilder</b>, iol-apps üretmeye ve yapılandırmaya olanak tanıyan iol yazılımıdır.<br>
+iolBuilder CLI, konsoldan çalışan kamuya açık olmayan veya dahili bir varyanttır.<br> iolBuilder GUI, tüm bir SaaS işi olarak iol-apps üretmek, yapılandırmak ve yönetmek için uygun ve geniş özellikler sunan grafik arayüzlü kamuya açık bir uygulamadır.<br>
+<br>
+<b>iol-business</b> — bölgesel mevzuat ve sorumluluğa uygun olarak belirli bir bölgede bir iol-app'i temsil eden resmi olarak kayıtlı bir kuruluş.<br>
+Bir iol-business, iol-app komisyonlarından gelir elde edebilir ve bunların miktarını iol-provider ile kararlaştırır.<br>
+<br>
+NiXeL <b>Kullanıcısı</b> — NiXeL uygulamasını çalıştıran ve/veya NiXeL işlevselliği ile etkileşime giren gerçek kişi. Kullanıcı adını iol'e kaydeden ve/veya kullanıcı adı ile uygulamaya giriş yapan kullanıcıya Kayıtlı Kullanıcı denir.<br>
+Uygulamadaki <b>Aktivasyon</b> sonrasında kullanıcı, NiXeL'deki bakiyesine 40 <b>IOU</b> alır.<br>
+Kullanıcı, bir kullanıcı adı kaydettiğinde iol'deki hesabını alır.<br>
+Başka bir özel kullanıcı türü daha vardır — <b>Yazarlar</b> (Authors). Bir kullanıcı, örneğin https://github.com/internet-of-labour adresindeki iol açık kaynak kaynaklarına veya https://github.com/Distributed-Digital-Nomads adresindeki iol-provider açık kaynak kaynaklarına aktif katılım yoluyla bir Yazar olmaya davet edilebilir. Davetler NiXeL uygulamasının <b>Messaging</b> modülünde gönderilir.<br>
+<br>
+<b>Yazar</b> — iol bileşenlerinin oluşturulmasına ve/veya geliştirilmesine katılan kullanıcı. Doğal yasalar gereği Yazarlar, eserlerini oluşturdukları andan itibaren ve fiilen münhasır telif haklarına sahiptirler. Yazarlar, eserlerinin kullanıcılarından istedikleri tazminatı almalıdır. Royalty/Donation, NiXeL yazarları arasında NiXeL'e yatırdıkları SINHRO ile orantılı olarak dağıtılır. Bu, Yazarların emeği için diğer kullanıcılar tarafından telif haklarının gönüllü olarak ödenmesini sağlar.<br>
+Yazar türündeki Kullanıcılar için Koşullar, Kullanıcılar için Koşulları iol'den gelen Yazarlar için Koşullar ile genişletir.<br>
+<br>
+<b>FSP</b> (Finansal Hizmet Sağlayıcı) — finansal hizmet haklarına sahip resmi olarak kayıtlı ve lisanslı kuruluşlar (bankalar, kredi kuruluşları, borsalar, ödeme sistemleri ve/veya bunların toplayıcıları vb.). NiXeL, devlet parasal fonlarını ve düzenlenen varlıkları, sistem yazarları tarafından kaydedilebilen FSP hesaplarında depolar.<br>
+<br>
+<b>Messaging</b> — kişisel ve grup kullanıcı mesajlaşması için dahili bir NiXeL modülü. Bu modül uygulama içi sohbet veya mesajlaşma uygulamalarına benzer. Ancak NiXeL bir mesajlaşma uygulaması değildir ve şunlara izin vermez:<br>
+- manuel olarak grup oluşturma;<br>
+- profilini gizleme;<br>
+- mesajları silme veya gizleme.<br>
+Messaging modülü NiXeL'de şunlar için kullanılır:<br>
+- farklı dillerde kullanıcı desteği. "FAQ ve Destek" menüsü, sistem tarafından desteklenen çeşitli dillerde grup sohbetleri sağlar;<br>
+- kullanıcı müşteriler ve yükleniciler arasında özel, kamuya açık olmayan iletişim;<br>
+- Özel Finansman projelerinin (<b>Crowdfunding</b>) kamuya açık tartışılması;<br>
+- <b>Insurance</b> modülündeki sigorta desteği taleplerinin kamuya açık tartışılması;<br>
+- <b>Charity</b> modülündeki hayırseverlik projelerinin kamuya açık tartışılması;<br>
+- yükleniciler ve iş siparişi verenlerin değerlendirmeleri. iol ekosistemi her "iol-app + kullanıcı" çifti için bir grup sohbeti oluşturur. Herkes bu grubu okuyabilir, ancak yalnızca kullanıcının kendisi, sipariş verenleri veya bu iol-app'teki yüklenicileri yazabilir. Daha fazlasını <b>iol-quality</b> bölümünde okuyun.<br>
+Grup sohbetlerinin kendi kuralları ve grup içinde hiyerarşik olarak düzenlenmiş ve mesajlarda renk kodlu başlıklara sahip Destek, Teknik Destek, Moderatör, Finansal Destek, Hukuk Desteği, Sistem Yöneticisi, Geliştirici, Mimar gibi çeşitli resmi katılımcıları olabilir.<br>
+<br>
+<b>iol-quality</b> — iş yüklenicilerinin ve sipariş verenlerin kalite kontrolü için örgütsel ve teknik bir mekanizma. iol-quality, işin sipariş veren tarafından değerlendirilmesini, yüklenicinin sipariş veren tarafından değerlendirilmesini ve yorumları içerir.<br>
+İşin tamamlanmasının ardından sipariş veren ve yükleniciden birbirlerini 11 puanlık bir ölçekte değerlendirmeleri istenir: -5 (çok kötü) ile 5 (çok iyi) arası derecelendirmeler, 0 - kayıtsız/nötr. İş veya sipariş puanları, derecelendirmenin komisyon karşılığında alınan SINHRO miktarı ile çarpılmasıyla hesaplanır. Bu puanlar, siparişin alındığı iol-app'te sipariş veren veya yüklenici olarak kullanıcının toplam puanlarına eklenir.<br>
+Derecelendirme, söz konusu iol-app'teki yüklenici veya sipariş veren olarak tüm kullanıcılar arasındaki maksimum puana göre hesaplanır. Derecelendirmeler sipariş verenler ve yükleniciler için ayrı ayrı hesaplanır.<br>
+Bu derecelendirmeler kullanıcı profilinde tüm kullanıcılara görünür. Sipariş veren, siparişi kabul etmeye istekli potansiyel işçilerin derecelendirme sırasına göre azalan bir listesini görür.<br>
+Derecelendirmeden (veya derecelendirmeden vazgeçtikten) sonra, işçi ve sipariş verenden bir yorum bırakmaları istenir. Bu amaçla NiXeL, "iol-app + kullanıcı" çifti için bir grup sohbeti açar. Bu sohbette anlaşmazlıkları çözebilir veya birbirlerine teşekkür edebilirler. Diğer iol kullanıcıları bu sohbeti okuyabilir. Herhangi bir kullanıcı, bir kullanıcının tüm grup sohbetlerini o kullanıcının profilinden açabilir.<br>
+Potansiyel bir yüklenici tarafından bir sipariş teklifi alındığında veya sipariş veren tarafından potansiyel bir işçi hakkında bir bildirim alındığında, kullanıcılar derecelendirmeleri ve yorumları görüntülemek için birbirlerinin profillerini açabilirler. Bu, nihai bir işe alma kararı vermelerine yardımcı olur.<br>
+<br>
+<b>Aktivasyon</b> — otomatik doğrulama.<br>
+Profil aktivasyonu üzerine, NiXeL'deki kullanıcı bakiyesine 40 IOU alacak kaydedilir. Bir profili aktive etmek için, kullanıcı profilinin Ad, Soyad ve doğum tarihi bölümlerinin doldurulmuş olması ve her iki yüzünü de gösteren en az bir kimlik belgesinin (kimlik kartı, sürücü belgesi veya pasaport) yüklenmiş olması gerekir.<br>
+<br>
+<b>Doğrulama</b> — bir kullanıcı destek moderatörünün kullanıcının aktivasyon sırasında sağladığı verileri karşılaştırdığı manuel doğrulama.<br> Doğrulama, kullanıcı hesaplarının ek korumasına yöneliktir. Yanlış veya üçüncü taraf bilgileri sağlamak, bu Akıllı Sözleşme T0 uyarınca hesabın askıya alınmasına yol açabilir.<br>
+<br>
+<b>IOU</b> — Internet of Labour iol-ekosisteminin/platformunun "I Owe You" kavramıdır: IOU fikri, tek bir konumda gerçekleştirilen herhangi bir işin başka herhangi bir konumda aynı maliyete sahip olması gerektiğidir. Örneğin, bir ülkede 1 IOU karşılığında iş yaptıysanız, başka herhangi bir yerde aynı işi 1 IOU karşılığında sipariş edebileceğiniz anlamına gelir. Ancak bir sorun ortaya çıkar: Farklı ülkelerdeki işlerin maliyetleri farklıdır. Bu sorunu çözmek için iol, 1 IOU'nun işin yapıldığı ülkedeki saatlik asgari ücrete eşit olmasını önerir.<br>
+iol mimarisi, işçilerin ve sipariş verenlerin IOU kullanarak emek ödemelerini hesaplaşmalarına olanak tanır. Eş zamanlı olarak bu, geleneksel ekonomiyle ilişkili yerel ve küresel sorunları çözebilir.<br>
+Özünde IOU, herhangi bir para birimi veya varlık değildir. IOU, <b>"Isimsiz hamiline yazılı bono"</b> kabul edilir. Bu, karşılıklı borç tasfiyesini sağlar.<br>
+IOU herhangi bir para birimi karşılığında satın alınamaz veya satılamaz. Böylece, yerel düzenlemelerle uyumlu olarak farklı ekonomik düzeylere sahip ülkelerde bir "iş-fiyat" dengesi sağlanır.<br>
+<br>
+<b>SINHRO</b> — iol'deki bakiyeyi, resmi ulusal para birimlerini, düzenlenen varlıkları, iol-apps komisyon paylarını, telif ve fikri hakları, dijital varlıkları, küresel fikri, güvenlik ve finansal yapıları ve ayrıca eski ve yeni ekonomileri senkronize etmek için dahili bir mekanizmadır. SINHRO, iol'ün merkeziyetsiz yönetiminde kullanılabilir.<br>
+SINHRO yalnızca gerçek emekle desteklenir.<br>
+SINHRO ihraç etme prosedürü:<br>
+- herhangi bir iol-app'te alınan işin tamamlanmasının ardından, kesilen komisyonlar karşılığında iol, emek ödemesi para birimine göre mevcut döviz kuru üzerinden SINHRO miktarını hesaplar. Bu SINHRO miktarı, komisyonu ödeyen kullanıcının bakiyesine alacak kaydedilir;<br>
+- yazarlar için, bileşenleri oluştururken ve geliştirirken iol SINHRO ihraç eder ve bakiyelerine alacak kaydeder.<br>
+SINHRO'nun diğer para birimlerine ve varlıklara göre döviz kuru, kullanıcılar arasında gerçekleştirilen işlemlerle belirlenir. SINHRO ile başka bir para birimi arasında takas yapmak isteyen kullanıcılar, NiXeL bakiyesindeki SINHRO'ya dokunarak bunu yapabilirler:<br>
+- eşleşen teklifleri bekleyen diğer kullanıcılardan gelen SINHRO alış/satış tekliflerini görüntüleyebilirler. Bu listeden bir teklif seçip miktarı belirtmek, işlemin <b>SinhroBot</b> tarafından derhal yürütülmesini sağlar;<br>
+- istenen fiyat ve miktarda bir alış/satış emri verebilirler. Sistemde eşleşen teklifler varsa, SinhroBot işlemi derhal gerçekleştirecektir; aksi takdirde diğer kullanıcılara "Başkalarının Teklifleri" listesinde görünür olacaktır. Yerine getirilmemiş kişisel teklifler "Tekliflerim" listesinde görünür. Teklif edilen varlığın miktarı bakiyenin Beklemede alanına taşınacaktır. "Tekliflerim" bölümünde kişi tekliflerini iptal edebilir.<br>
+SINHRO'nun bir para birimine göre mevcut döviz kuru, gerçekleştirilen son işlemle belirlenir.<br>
+Bir para birimine göre henüz mevcut bir döviz kuru yoksa, kur, FSP para birimi döviz kurları kullanılarak dönüştürme ile mevcut bir SINHRO kuruna göre hesaplanır.
+Dolaşımdaki SINHRO miktarını sınırlamak için aşağıdaki SINHRO imha/itfa mekanizması uygulanır:<br>
+- SINHRO karşılığında iş yaparken ("SINHRO ile ödeme"), iol-app komisyonu diğer para birimlerinde ödeme yaparken olduğu gibi aynı miktarda tahsil edilir. Ancak bu durumda komisyon karşılığında SINHRO ihraç etmenin bir anlamı yoktur. Bu nedenle, bu tür komisyon hiç kimseye dağıtılmaz ve o iol-app'in bir derecelendirme parametresi olarak sonsuza dek iol-app hesabında kalır. Bir iol-app birey olmadığı ve bakiyesini yönetemediği için, bu SINHRO miktarı artık dolaşıma ve toplam arza katılmaz. Bu, SINHRO enflasyonuna karşı koyar ve böylece değer kaybetmesini önler.<br>
+<b>SinhroBot</b> döviz kuru manipülasyonunu engelleyebilir. Örneğin, bir saldırgan başkalarının sunduğundan daha düşük bir alış emri verdikten sonra küçük bir hacimde SINHRO satmaya çalışarak mevcut SINHRO fiyatını manipüle etmek isterse, SinhroBot bunu şu şekilde gerçekleştirecektir: SinhroBot onlardan kendi fiyatlarından satın alacak ve ilgilenen alıcılar arasındaki en yüksek fiyattan satacaktır. Böylece bu yalnızca SINHRO için daha yüksek bir fiyatı sabitleyecektir ve SINHRO'nun tüm iol-apps genelinde yapılan gerçek işlerle desteklendiği göz önüne alındığında, SINHRO istikrarlı bir büyümeye eğilimli olacaktır.<br>
+SINHRO, herhangi bir kullanıcıya tek bir yerden tüm iol-apps komisyon paylarına katılma fırsatı sunar.<br>
+<u>SINHRO, vergilerin SINHRO şeklinde kabul edilmediği ülkelerde herhangi bir para birimi veya varlık değildir ve bu tür ülkelerin yasaları kapsamında düzenlemeye tabi tutulamaz.</u><br>
+<b>DİKKAT! Dolandırıcılara dikkat edin!</b> SINHRO, resmi NiXeL uygulaması dışında hiçbir yerde satılmaz veya takas edilmez.<br>
+<br>
+<b>P/PS</b> (Project or Profit Stake). Tüm iol kullanıcıları iol-app komisyonlarının dağıtımına katılabilir. Komisyon dağıtımı şu şekilde gerçekleşir:<br>
+- yükleniciye ödeme yapıldıktan ve iol komisyonları düşüldükten sonra, sistem iş siparişinin alındığı veya oluşturulduğu iol-app'e yatırdıkları SINHRO ile orantılı olarak kullanıcıların komisyon payı sayısını hesaplar;<br>
+- hesaplanan paylar, ilgili kullanıcıların bakiyelerine emek ödemesi için kullanılan para biriminde eklenir.<br>
+Kullanıcılar iol-app açıklamalarında SINHRO'larını yatırabilir ve çekebilirler.<br>
+<br>
+<b>Royalty/Donation</b> — Yazar statüsündeki kullanıcılara Yazar telif hakkı veya Bağış.<br>
+Yazarlara telif hakları/bağışların ödemeleri şu şekilde gerçekleşir:<br>
+- Yazar telif hakkı işlem tutarlarından düşülür. Farklı kullanıcılar için değişiklik gösterebilir, ancak işlem tutarlarının %1'ini geçmez. Yazarlar kendilerine ödeme yapmanın bir anlamı olmadığı için işlemler için telif ödemezler.<br>
+Yazarlar, telif haklarını, iol ekosistemi içindeki yazarlık faaliyetlerini desteklemeyle ilgili giderler de dahil olmak üzere kendi takdirlerine göre kullanırlar.<br>
+<br>
+<b>Crowdfunding</b> — bir projeye özel yatırım çekme (kısaca <b>C-project</b>) — ekosistemin amacının mantıksal bir sonucu olarak hizmet eden bir iol özelliği.
+Ekosistem kullanıcıları, iol ekosistemi içindeki faaliyetlerini uygulamak ve geliştirmek için bu işlevsellikten yararlanabilirler.<br>
+Herhangi bir kullanıcı, kendi iol-app'ini iyileştirmek, başlatmak ve reklamını yapmak, iol-apps'lerde siparişleri yürütmek için kullanılan araçlarını yükseltmek ve genişletmek veya yazarlar durumunda yeni fikirleri uygulamak veya iol'deki işlevlerini geliştirmek için bir kitle fonlaması projesi başlatabilir.<br>
+Özel yatırımların çekilmesi (bir C-project açılması), bu Akıllı Sözleşme T0'ın "Kullanım Koşulları" bölümünün alt maddelerine uygun olarak gerçekleşir.
+iol ekosistemindeki her yeni C-project için bu C-project'in soruları, cevapları ve tartışılması için bir grup sohbeti açılır. Kullanıcı profilleri tüm C-projects listelerini görüntüler. Bu, diğer kullanıcıların bir kullanıcının önceki C-projects sonuçlarını görmelerine ve bu kullanıcının C-projects'lerine katılmaya karar vermelerine olanak tanır.<br>
+<br>
+<b>Insurance</b> — iol-apps aracılığıyla elde edilen işleri yürütürken ortaya çıkan öngörülmeyen giderlerin tamamen veya kısmen karşılanması için tasarlanmış bir iol özelliği.<br>
+Geleneksel sigorta hizmetlerinin sağlanması, istatistiklerin derinlemesine matematiksel analizini gerektirir. Şu anda iol, sabit sigorta primleri sunmak için yeterli istatistiğe sahip değildir. Bu nedenle bu işlevsellik, sosyal sorumluluk ilkeleri üzerinde çalışır; yani ödemeler gönüllüdür ve sabit değildir. Yani kullanıcılar hangi sigorta vakasına ne miktarda katkıda bulunacaklarına kendileri karar verirler.<br>
+Örneğin, boyacılar için bir iol-app'te bir kullanıcı tavanı boyamak için bir sipariş aldı. Ancak sipariş verenin köpeği kazara halıya boya döktü ve sipariş veren bunun nasıl olduğunu görmedi. İşçi veya sipariş veren, NiXeL'de kimin sigorta talebinde bulunacağı konusunda anlaşabilir. Bunlardan biri NiXeL'de bir talep açabilir. Diğer kullanıcılar, talep sahibinin ve yüklenicinin profillerinde benzer taleplerin geçmişini görüntüleyebilir ve talep edilen tutarın bir kısmını karşılayıp karşılamayacaklarına karar verebilirler.<br>
+Bu özelliğin prosedürü, bu Akıllı Sözleşme T0'ın "Kullanım Koşulları" bölümünün alt maddelerinde düzenlenmiştir.<br>
+<br>
+<b>Charity</b> — iol, sosyo-ekonomik bir platform olarak, toplum üyelerinin engellenen yetenekleriyle ilgili sosyal sorunları çözmeyi amaçlayan hayırseverlik faaliyetlerini destekler. Veya bu, vergi daireleri tarafından benzer şekilde uygulanır. Bu nedenle vergiler, hayırseverlik giderleri düşüldükten sonra toplanmalıdır. iol ekosisteminin bu işlevselliği, kullanıcıların çalışma kapasitelerini kısmen veya geçici olarak kaybetmiş bireyleri desteklemek için kendilerini SINHRO tanımıyla ilişkilendirerek özel veya grup hayırseverlik bağışı talepleri açmalarına olanak tanır.<br>
+Bu özelliğin prosedürü, bu Akıllı Sözleşme T0'ın "Kullanım Koşulları" bölümünün alt maddelerinde düzenlenmiştir.<br>
+<br>
+<b>P2P</b> (Peer to Peer) işlemleri — parasal token'ların ve varlıkların FSP katılımı olmadan doğrudan kullanıcıdan kullanıcıya aktarılmasına izin veren bir mekanizma. iol, kullanıcıların işlem koşullarına uyum garantisi ile P2P işlemlerini teknik ve örgütsel olarak mümkün kılar. P2P işlemleri, örneğin FSP'ler tarafından desteklenmeyen veya kısıtlanan parasal token'ların dahil edilmesi için yararlı olabilir. Sonuç olarak, P2P aracılığıyla bakiyeye alacak kaydedilen fonlar FSP hesaplarında depolanmaz; ancak iol değişim mekanizmaları aracılığıyla FSP tarafından desteklenen varlıklara dönüştürülmesi mümkündür.<br>
+<br>
+<br>
+<b>Kullanım Koşulları</b><br>
+<br>
+<b>1. Kişisel Veriler ve Gizlilik Politikası</b><br>
+<br>
+1.1. NiXeL, bir iol-app olarak, kendisine ait sunuculara veya kullanıcı veri depolamasına sahip değildir, ancak özel erişimle Internet of Labour (iol) platformuna erişmek için mobil uygulama şeklinde bir grafik arayüz olarak hizmet eder.<br>
+<br>
+1.2. NiXeL, kullanıcılardan yalnızca temel işlevselliği sağlamak için gerekli olan verileri girmelerini ister. Bu, NiXeL'in, Doğrulama için gerekli belge fotoğrafları hariç, kullanıcılardan yalnızca diğer kullanıcılara gösterilen halka açık verileri talep ettiği anlamına gelir. Kullanıcı, profilindeki "Diğer kullanıcılara göster" anahtarını kullanarak belgeleri diğer kullanıcılardan gizleyebilir.<br>
+<br>
+1.3. Aktivasyon/doğrulama için sağlanan kimlik belgelerinin diğer kullanıcılardan gizlenmesi önerilir. Ancak manuel kullanıcı doğrulaması için iol moderatörlerinin erişimine açık olacaktır.<br>
+<br>
+1.4. NiXeL'de sağlanan her türlü veri Internet of Labour platformuna gönderilir. Platformla veri değişimi için NiXeL, açık kaynaklı iolNet modülünü kullanır. NiXeL ve iol arasında iolNet modülü aracılığıyla veri değişimi yalnızca iol protokolüne uygun olarak güvenli bir şekilde yürütülebilir:<br>
+• iol protokolü üzerinden iletişim, bağlantıya özgü TLS/SSL Şifrelemesi kullanır ve http/https kullanmaz.<br>
+• fotoğraflar/çizimler gibi grafik bilgiler iol platformu tarafından korunur ve yalnızca iol-apps bünyesinde erişilebilir durumdadır; grafik bilgilerin NiXeL'e teslimi ise her bağlantı için benzersiz, tek kullanımlık bir token kullanır.<br>
+• uygulama güncellemeleri, Google Play ve mobil cihaz üreticileri dahil olmak üzere üçüncü tarafların NiXeL ve iol'ün kullanıcı verilerine müdahale etme girişimlerini önlemek için maksimum güvenilirlikteki yolları kullanır.<br>
+<br>
+1.5. Kişisel verilerin korunmasına ilişkin ek öneriler, bu Akıllı Sözleşme T0'ın <b>"İpuçları ve Öneriler"</b> bölümünde verilmiştir.<br>
+<br>
+<b>2. İş Hesaplama Prosedürü</b><br>
+<br>
+2.1. Herhangi bir iol-app'te sipariş veren ile yüklenici (taraflar) arasında bir işlem gerçekleştirilirken, yani bir yüklenici işe alınırken NiXeL, iol-app ayarlarına göre işin ön tutarını (=Psum) hesaplar ve sipariş akıllı sözleşmesini "Taraflarca kabul edildi" durumuna geçirir.<br>
+<br>
+2.2. İşlemde nakit ödeme seçilmediyse, sipariş verenin bakiyesindeki ön tutar "Beklemede" durumuna geçer.<br>
+<br>
+2.3. Taraflar, NiXeL'de iş siparişinin beklenen yürütülmesi hakkında bir bildirim alırlar ve gerçek zamanlı konumlarını paylaşmaları istenir. Bildirim, işin başlamasından önce iol-app ayarlarında tanımlanan bir zamanda gönderilir. Bu, tarafların çalışma yerinde hızlı bir şekilde buluşmasına yardımcı olur.<br>
+<br>
+2.4. Taraflardan herhangi biri ilgili düğmeye basarak işin başladığını sisteme bildirebilir. Sistem daha sonra diğer tarafa işin başladığına dair bir bildirim gönderir ve iol-app ayarlarına göre takibe başlar.<br>
+<br>
+2.5. Yüklenici, ilgili düğmeye basarak işin duraklatıldığını (geçici olarak askıya alındığını) sisteme bildirebilir. Sistem daha sonra sipariş verene buna ilişkin bir bildirim gönderir ve ödeme takibini duraklatır.<br>
+<br>
+2.6. Taraflardan herhangi biri ilgili düğmeye basarak işin tamamlandığını sisteme bildirebilir. Bunu yaptığında sistem aşağıdakileri gerçekleştirir:<br>
+- diğer tarafa bir tamamlama bildirimi gönderir;<br>
+- iol-app ayarlarına göre nihai gerçek tutarı (=Fsum) hesaplar;<br>
+- Psum, Fsum'a eşitse, Psum tutarı sipariş verenin "Beklemede" bakiyesinden düşülür ve yüklenicinin bakiyesine alacak kaydedilir;<br>
+- Psum, Fsum'dan büyükse, Fsum tutarı sipariş verenin "Beklemede" bakiyesinden düşülür ve yüklenicinin bakiyesine alacak kaydedilir. Sipariş verenin "Beklemede" bakiyesindeki Psum-Fsum tutarı "Kullanılabilir" bakiyeye iade edilir;<br>
+- Psum, Fsum'dan küçükse, Fsum tutarı sipariş verenin "Beklemede" bakiyesinden düşülür ve yüklenicinin bakiyesine alacak kaydedilir. Fsum-Psum, sipariş verenin bakiyesinden düşülür ve yüklenicinin bakiyesine alacak kaydedilir. Bu durumda, Fsum-Psum sipariş verenin bakiyesinde mevcut olan tutarı aşarsa, yalnızca mevcut tutar düşülür, kullanılabilir bakiye sıfır olur ve sipariş veren bu akıllı sözleşmeye bağlı olarak yükleniciye borçlanır.<br>
+<br>
+2.7. Komisyonlar<br>
+2.7.1. İş için nihai hesaplaşma üzerine, siparişin verildiği iol-app'in ayarlarında öngörülmüşse taraflardan bir komisyon alınabilir.<br>
+2.7.2. Komisyon oranları akıllı sözleşmede belirtilir ve yüklenici ile hesaplaşmadan sonra Fsum'dan düşülür.<br>
+2.7.3. SINHRO ve IOU karşılığında ödenmeyen işler için komisyonların %80'i, o iol-app'e yatırılan tutarla orantılı olarak kullanıcı bakiyelerine alacak kaydedilir. %20'si iol-provider'ın bakiyesine alacak kaydedilir.<br>
+2.7.3. Kesilen komisyonlar karşılığında iol, söz konusu ödeme para biriminin mevcut SINHRO döviz kuru üzerinden kesilen komisyonlara eşit miktarda SINHRO üretir. Bu para biriminin SINHRO'ya göre bir kuru yoksa, FSP para birimi kurları aracılığıyla mevcut kurlara göre çapraz kur hesaplaması kullanılır.<br>
+2.7.4. Komisyona karşılık gelen SINHRO sayısı bu iol-app'in derecelendirmesine eklenir.<br>
+2.7.5. İş karşılığında sipariş taraflarınca SINHRO veya IOU seçilmişse, komisyona karşılık gelen SINHRO sayısı iol'den kaldırılır ve bu iol-app'in derecelendirmesine eklenir.<br>
+<br>
+2.8. Royalty/Donation, komisyon ödemesinden sonra taraflardan düşülür.<br>
+<br>
+2.9. Komisyonlar ve Royalty, iş hesaplaşmasının yapıldığı para biriminde ödenir. Alıcıların o para biriminde bakiyesi yoksa, sistem otomatik olarak o para biriminde bir bakiye açar.<br>
+<br>
+<b>3. Haklar</b><br>
+Kullanıcı, aşağıdaki alt maddelerde açıklanan eylemleri ve prosedürleri gerçekleştirme hakkına sahiptir:<br>
+<br>
+3.1. NiXeL'i kendisine ait olan ve buna izin veren herhangi bir cihaza yüklemek.<br>
+<br>
+3.2. Kullanıcı adını ve hesabını kaydetmek.<br>
+<br>
+3.3. Bu Akıllı Sözleşme T0'ı okumuş, anlamış ve kabul etmiş olmaları koşuluyla NiXeL'in tüm mevcut işlevselliğini kullanmak.<br>
+<br>
+3.4. Promosyon kampanyalarına katılmak ve promosyon koşullarına uygun olarak bonuslar almak.<br>
+<br>
+3.5. Bu grupların kurallarına uyarak destek gruplarıyla iletişime geçmek.<br>
+<br>
+3.6. NiXeL kullanımını istediği zaman durdurmak.<br>
+<br>
+3.7. NiXeL'deki hesabın engellemesini kaldırarak sadece https://github.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/issues adresindeki düzenlenmemiş yazarların tahkimine başvurmak.<br>
+<br>
+3.8. Kullanıcı adının engellenmesi durumunda fonlarını çekmek için 336 saate sahip olmak.<br>
+<br>
+<b>4. Kısıtlamalar ve Yükümlülükler</b><br>
+<br>
+4.1. Kullanıcı adı, hesap.<br>
+4.1.1. Kullanıcı, profilinde ve hesabında yalnızca kendi adını ve belgelerini kullanmakla yükümlüdür.<br>
+4.1.2. Kullanıcının NiXeL şifresini başka kişilerle paylaşmaya veya kendi adına kullanıcı adını veya hesabını kullanmalarına başka şekilde izin vermeye hakkı yoktur.<br>
+4.1.3. Kullanıcının başka bir kişinin kullanıcı adı veya hesabı altında NiXeL'e giriş yapmaya veya NiXeL'i kullanmaya hakkı yoktur.<br>
+4.1.4. NiXeL yüklü ekipmanın kullanım haklarını satarken veya başka şekilde devrederken, kullanıcı kendi kullanıcı adından çıkış yapmakla yükümlüdür.<br>
+4.1.5. NiXeL Yazarı olmadığı sürece, kullanıcının birden fazla kullanıcı adı kaydetme hakkı yoktur.<br>
+<br>
+4.2. Belgeler.<br>
+4.2.1. Kullanıcı, süresi dolmuş kimlik belgelerini bağımsız olarak güncellemelidir.<br>
+4.2.2. Süresi dolmuş kimlik belgelerine sahip kullanıcıların iol ekosistem işlevselliği kısıtlanabilir.<br>
+4.2.3. Kullanıcının başkasına ait veya sahte belgeleri kullanma hakkı yoktur.<br>
+<br>
+4.3. Mevzuat ve Devlet Düzenlemesi.<br>
+NiXeL, tek bir tüzel kişiliği olmayan, kullanıcılar tarafından kullanıcılar için oluşturulmuş küresel, çok dilli bir uygulamadır ve tek bir ülkenin veya kuruluşun mevzuatı ile düzenlenemez. Bu nedenle her kullanıcı, NiXeL uygulamasındaki ve iol'ün diğer bileşenlerindeki eylemleri için kişisel sorumluluk üstlenir.<br>
+4.3.1. Kullanıcı, NiXeL'in ikamet ettiği, bulunduğu veya vatandaşı olduğu ülkenin yasalarına aykırı olan işlevselliğini kullanmamakla yükümlüdür.<br>
+4.3.2. Kullanıcı NiXeL'i olduğu gibi kendi sorumluluğunda kullanır ve NiXeL'in işlevselliği ve olanakları hakkında hiç kimseye karşı talepte bulunamaz. Bazı olası riskler bu Akıllı Sözleşme T0'ın <b>Riskler</b> bölümünde açıklanmıştır.<br>
+4.3.3. Kullanıcı, NiXeL ve iol'ün diğer bileşenlerini kullanırken elde ettiği gelirlerle ilgili vergileri kendi vergi dairesine bağımsız olarak bildirir.<br>
+4.3.4. Vergilendirme döneminin bitiminden en az 2 iş günü veya banka günü önce, kullanıcı fonlarını NiXeL bakiyesinden banka hesaplarına çekebilir. Farklı para birimleri için vergilendirme dönemleri farklılık gösterebilir. Kullanıcının devletinde vergi şeklinde kabul edilmediği sürece bu durum SINHRO ve IOU için geçerli değildir.<br>
+4.3.5. Yeni bir vergilendirme döneminin ilk dakikasında (saat 00:00 AEST), FSP'deki kaydettirenin vergi ikametgahına göre FSP'deki hesap bakiyesinden vergiler ve diğer zorunlu devlet ödemeleri ödenir. Daha sonra, yapılan ödemelerle orantılı bir tutar kullanıcı bakiyelerinden düşülür.<br>
+4.3.6. Madde 4.3.4 ve 4.3.5, kullanıcıların para birimi bakiyelerinin güvenliğini ve kullanılabilirliğini sağlamalarına olanak tanır. Ayrıca ekosistemin hızlı bir şekilde başka bir FSP'ye geçmesini sağlar.<br>
+<br>
+4.4. Grup Sohbetleri / Mesajlaşma.<br>
+4.4.1. Kullanıcı, kullanıcı destek gruplarındaki resmi katılımcıların duyurularını takip etmeli ve duyurular doğrultusunda önlemler almalıdır.<br>
+4.4.2. Kullanıcı destek gruplarındaki resmi katılımcıların bu Akıllı Sözleşme T0 ile çelişmeyen mesajları, bu Akıllı Sözleşme T0'a bir ek görevi görebilir.<br>
+4.4.3. Kullanıcı grup sohbeti kurallarını ihlal etmemekle yükümlüdür.<br>
+<br>
+4.5. Kullanıcının Banka Hesabı.<br>
+4.5.1. Kullanıcı, NiXeL'deki bakiyeyi doldururken yalnızca kendi banka hesabını kullanmakla yükümlüdür.<br>
+4.5.2. Kullanıcı, NiXeL bakiyesinden yalnızca kendi banka hesaplarına para birimi çekebilir.<br>
+<br>
+4.6. Kullanıcının NiXeL'in uygulama mantığını (kod, kütüphaneler, modüller, bileşenler, simgeler/işaretler, görsel görünüm, önbellek, yerel veriler vb.) hiçbir şekilde değiştirme hakkı yoktur. Kullanıcı, uygulama kaynaklarındaki kaynak kodunu değiştirebilir ve Yazar kullanıcılara sunulan https://github.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-source özel depo adresinde sonraki sürümlerde değişikliklerin uygulanmasını talep edebilir.<br>
+<br>
+4.7. Kullanıcı, uygulamadaki alan adlarını, ipuçlarını, açıklamaları ve talimatları dikkatlice okumalı, yalnızca doğru gerekli bilgileri girmelidir.<br>
+<br>
+4.8. Kullanıcı hiçbir yerde ve hiçbir şekilde olumsuz bilgi veya görüş beyan etmemeli veya yaymamalıdır. Hatalar, böcekler, tavsiyeler, dilekler vb. kullanıcı destek gruplarında bildirilmelidir.<br>
+<br>
+4.9. NiXeL ve iol'ün ek kısıtlamaları, farklı veri durumlarına ve kullanıcı eylemlerine bağlı olarak uygulamayı kullanırken kullanıcıya bildirilebilir.<br>
+<br>
+4.10. Kullanıcı 356 gün boyunca NiXeL'i kullanmazsa hesabın 100 yıl süreyle otomatik olarak askıya alınması gerçekleşir.<br>
+<br>
+4.11. NiXeL Kullanımının Sonlandırılması.<br>
+NiXeL uygulamasını daha fazla kullanmamaya karar verilmesi durumunda, kullanıcı aşağıdaki adımları gerçekleştirmelidir:<br>
+4.11.1. NiXeL'deki tüm tekliflerini iptal etmek.<br>
+4.11.2. Bakiyedeki tüm para birimlerini kendi banka hesabına çekmek.<br>
+4.11.3. Kullanıcı adı ile giriş yapılan tüm cihazlarda oturumu kapatmak.<br>
+4.11.4. 356 günden fazla NiXeL'e giriş yapmamak. Bundan sonra madde 4.10 yürütülecektir.<br>
+<br>
+4.12. NiXeL işlevselliği ile ilgili tüm anlaşmazlıklar yalnızca kullanıcı destek gruplarında veya https://github.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/issues adresindeki yazarların tahkiminde çözülmelidir.<br>
+<br>
+4.13. Kullanıcı bu Akıllı Sözleşme T0 güncellemelerini takip etmelidir. Değişikliklerin kabul edilmemesi durumunda kullanıcı madde 4.11'deki prosedürlerden geçmelidir.<br>
+<br>
+4.14. Kullanıcı, NiXeL'in ve iol bileşenlerinin diğer kullanıcılarına zarar vermemelidir.<br>
+<br>
+<b>5. Sorumluluk</b><br>
+<br>
+5.1. Kullanıcı Hesabının Askıya Alınması.<br>
+5.1.1. Bu Akıllı Sözleşme T0 şartlarının ihlali durumlarında, kullanıcı uyarılabilir, uyarıya uygun olarak para cezasına çarptırılabilir, belirli sistem işlevlerinin kullanımı kısıtlanabilir ve kullanıcının hesabı da belirli bir süre için askıya alınabilir.<br>
+5.1.2. Hesabın askıya alınması, iol ekosistemi içinde kullanıcının askıya alınmasına yol açmaz, ancak NiXeL'de hesaba giriş yapmayı imkansız hale getirir. Bu arada, iol yetkilendirme API'sine erişimi olan diğer özel iol-apps kullanımlarına izin verebilir.<br>
+5.1.3. Engellemenin kaldırılması, kullanıcı askıya alma süresinin sonuna ulaşıldığında otomatik olarak gerçekleşir.<br>
+5.1.4. Engelleme kararı üzerine kullanıcıya ihlale ilişkin özel bir mesaj gönderilecektir. Bundan sonra kullanıcı, 336 saat içinde tekliflerini iptal etmeyi ve fonlarını banka hesabına çekmeyi başarmalıdır. 336 saat sonra kalan bakiye, uygulamadaki payları ile orantılı olarak yazarlar arasında dağıtılır.<br>
+5.1.5. Engellemenin kaldırılması, düşük bir olasılıkla, bu Akıllı Sözleşme T0'ın 3.5 maddesinde açıklanan grubun kararıyla gerçekleştirilebilir.<br>
+5.1.6. Bir NiXeL kullanıcısının askıya alınması, kullanıcıyı NiXeL üzerinden girişi kullanan diğer iol-apps'leri kullanma ve başka bir kullanıcı adı kaydetme olanağından mahrum bırakır.<br>
+<br>
+5.2. Uygulamanın suç amacıyla kullanılması durumunda, FSP'ye yapacakları resmi talep üzerine veriler resmi soruşturma makamlarıyla paylaşılabilir.<br>
+<br>
+5.3. Madde 4.6 şartlarının ihlali bir hacker saldırısına eşdeğer tutulur.<br>
+<br>
+5.4. NiXeL'e veya iol sistemine yapılan, verilerin sızdırılmasına, bozulmasına veya yetkisiz değiştirilmesine yol açan, kullanıcılara maddi ve finansal zararlar veren veya sistem işlevselliğini etkileyen hacker saldırıları, FSP'lerin ve Google, Microsoft, Amazon, Alibaba vb. bulut hizmet sağlayıcılarının katılımıyla soruşturulur ve bunlar da uluslararası ve devlet soruşturma hizmetlerini sürece dahil edebilir.<br>
+<br>
+5.5. Şifre, Özel Anahtarlar.<br>
+5.5.1. Kullanıcı, kullanıcı adının şifresinin güvenliği ve gizliliğinden kişisel sorumluluk taşır. Sistem kullanıcı şifrelerini depolamaz. Sistem, kullanıcı adı kaydı veya şifre değişikliği sırasında şifrenin özel bir karma (hash) işlevinin sonucunu (hash) kaydeder. Bir karma işlevinin sonucundan şifreyi geri yüklemek imkansızdır. Karma işlevlerinin nasıl çalıştığını, örneğin SHA gibi, çevrimiçi olarak araştırabilirsiniz.<br>
+5.5.2. Kullanıcı, kullanıcı şifresini unutması durumunda şifre sıfırlama özelliğini kullanabilir.<br>
+<br>
+5.6. Her kullanıcı, NiXeL uygulamasındaki ve iol'ün diğer bileşenlerindeki eylemleri için kişisel sorumluluk üstlenir.<br>
+<br>
+<b>Riskler</b><br>
+<br>
+Tüm kullanıcılar, mücbir sebep halleriyle, yani kullanıcı kontrolü dışındaki veya kullanıcı iradesinden bağımsız durumlarla ilişkili eşit riskleri kabul ederler. Bunlar genellikle şunları içerir: savaşlar, askeri eylemler, seller, yangınlar, depremler ve diğer doğal afetler, grevler, yürürlükteki mevzuattaki değişiklikler veya etkilenen kullanıcının gerçekçi olarak etkileyemeyeceği ve makul olarak öngöremeyeceği diğer tüm durumlar.<br>
+<br>
+NiXeL ve tüm iol ekosistemi/platformu çok sayıda ücretli, ücretsiz ve üçüncü taraf açık kaynaklı yazılım ürünleri, FSP hizmetleri, bulut hizmetleri, sürüm kontrol sistemleri, veritabanı yönetim sistemleri ve blokzincir ağları üzerine inşa edildiğinden ve Yazar kullanıcıların kendi sistem bileşenleri üzerinde uzaktan çalışan dağıtık bireyler olduğu göz önüne alındığında, mücbir sebebe eşit riskler şunları içerir: yazılım hataları (işletim sistemleri, hizmetler, framework'ler, kütüphaneler vb.), cihaz, ekipman, FSP, iletişim ve internet arızaları, belirli yazarların hastalığı ve/veya ayrılması, bankacılık sistemlerinin ve hizmetlerinin kısıtlamaları (SWIFT, Visa, MasterCard, UnionPay vb.), önceden kullanılan sistem bileşenlerinin sürüm uyumsuzluğu, uygulamaları yüklemek ve güncellemek için kaynakların kısıtlanması ve/veya kullanılanamaması (Google Play, Apple AppStore vb.), devletler ve bölgeler tarafından kaynaklara erişim kısıtlamaları ve hacker saldırıları.
+<br>
+Yazar kullanıcılar, NiXeL'in ve tüm iol sisteminin uzun vadeli çalışabilirliği ve işlevselliklerinin geliştirilmesiyle en çok ilgilenen kişilerdir. Masrafları kendilerine ait olmak üzere, sistemlerin kendi bileşenlerini sürdürürler ve yukarıdaki riskleri önlemek veya ortaya çıkan durumları düzeltmek için ellerinden gelenin en iyisini yapmaya çalışırlar. Hacker saldırılarının sonuçlarını düzeltmeye çalışmak için madde 5.4'te belirtilen önlemler alınabilir.<br>
+<br>
+<b>İpuçları ve Öneriler</b><br>
+<br>
+Yüklenen belgelerde ana ulusal pasaportunuzu kullanmanız önerilmez. Sürücü belgesi, kimlik kartı, uluslararası pasaport vb. gibi kamusal belgeleri kullanın.<br>
+<br>
+Süresi dolduğunda belgeleri derhal güncelleyin.<br>
+<br>
+Bu Akıllı Sözleşme T0, bir grup NiXeL yazarı tarafından iol yazarları, danışmanları ve çevirmenleri ile ortaklaşa geliştirilmiştir. Kamusal NiXeL deposunda herhangi bir kullanıcı tarafından düzenlenebilir ve uygulama için sunulabilir. https://github.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr adresindeki kamusal depoda bulunan bu Akıllı Sözleşme T0 güncellemelerine abone olun.<br>
+
+<br><br><br>

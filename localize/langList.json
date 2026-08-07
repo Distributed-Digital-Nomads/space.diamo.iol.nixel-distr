@@ -19,9 +19,9 @@
     "isoCode": "tt",
     "localizeFileName": "tt",
     "englishName": "Tatar",
-    "localName": "Tɔtʌrʧa (Tatarça, تاتارچا, 鞑靼人)",
-    "srcs": ["https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/localize/interface/tr.json"],
-    "exclude": true
+    "localName": "Tatarça (Татарча, تاتارچا, 鞑靼人)",
+    "srcs": ["https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/localize/interface/tt.json"],
+    "exclude": false
   },
   {
     "isoCode": "th",
@@ -43,7 +43,7 @@
     "isoCode": "ms",
     "localizeFileName": "ms",
     "englishName": "Malay",
-    "localName": "Bahasa Melayu",
+    "localName": "Melayu (Bahasa)",
     "srcs": ["https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/localize/interface/ms.json"],
     "exclude": false
   }
