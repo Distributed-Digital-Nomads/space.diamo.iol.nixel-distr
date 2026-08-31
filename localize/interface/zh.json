@@ -516,6 +516,7 @@
   {"ifi": 615, "text": "从文本/URL创建QR"},
   {"ifi": 616, "text": "从照片扫描QR"},
   {"ifi": 617, "text": "输入文本或URL (含 http)"},
+  {"ifi": 618, "text": "分享 NiXeL 应用"},
   {"ifi": 800, "text": "https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/docs/zh/ppsinfo.htm", "bigText": true, "note": "from 800 for documents bigtext links"},
   {"ifi": 1000, "text": "3-50 个字符 (a-z 和 0-9)"},
   {"ifi": 1001, "text": "8-50 个字符"},

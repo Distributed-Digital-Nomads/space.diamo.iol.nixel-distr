@@ -517,6 +517,7 @@
   {"ifi": 615, "text": "Create QR from text/URL"},
   {"ifi": 616, "text": "Scan QR from photo"},
   {"ifi": 617, "text": "Enter text or URL (with http)"},
+  {"ifi": 618, "text": "Share NiXeL app"},
   {"ifi": 800, "text": "https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/docs/en/ppsinfo.htm", "bigText": true, "note": "from 800 for documents bigtext links"},
   {"ifi": 1000, "text": "3-50 symbols a-z and 0-9"},
   {"ifi": 1001, "text": "8-50 symbols"},

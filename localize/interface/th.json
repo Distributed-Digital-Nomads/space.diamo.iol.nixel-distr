@@ -516,6 +516,7 @@
   {"ifi": 615, "text": "สร้าง QR จากข้อความ/URL"},
   {"ifi": 616, "text": "สแกน QR จากรูปภาพ"},
   {"ifi": 617, "text": "ป้อนข้อความหรือ URL (พร้อม http)"},
+  {"ifi": 618, "text": "แชร์แอป NiXeL"},
   {"ifi": 800, "text": "https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/docs/th/ppsinfo.htm", "bigText": true, "note": "from 800 for documents bigtext links"},
   {"ifi": 1000, "text": "3-50 สัญลักษณ์ a-z และ 0-9"},
   {"ifi": 1001, "text": "8-50 สัญลักษณ์"},

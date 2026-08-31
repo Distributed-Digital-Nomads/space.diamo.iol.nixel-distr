@@ -517,6 +517,7 @@
   {"ifi": 615, "text": "Тексттан/URL'дан QR булдыру"},
   {"ifi": 616, "text": "Фотодан QR сканерлау"},
   {"ifi": 617, "text": "Текст яки URL кертегез (http белән)"},
+  {"ifi": 618, "text": "NiXeL кушымтасы белән уртаклашу"},
   {"ifi": 800, "text": "https://raw.githubusercontent.com/Distributed-Digital-Nomads/space.diamo.iol.nixel-distr/main/docs/tt/ppsinfo.htm", "bigText": true, "note": "from 800 for documents bigtext links"},
   {"ifi": 1000, "text": "a-z һәм 0-9 булган 3-50 символ"},
   {"ifi": 1001, "text": "8-50 символ"},
