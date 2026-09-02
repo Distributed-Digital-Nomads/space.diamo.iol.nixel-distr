@@ -1,13 +1,15 @@
 {
-  "ed": 2743,
+  "ed": 2744,
   "name": "2.8",
   "env": "js",
-  "note": "Now available without account verification (KYC): Bill payments using IOU of the iol ecosystem; Payment acceptance and payments in SINHRO; Chats. Enhanced media protection, including document photos. Fixes: Screen Edge-To-Edge issue on Android 15+.",
-  "noteLoc": {
-    "en": "Now available without account verification (KYC): Bill payments using IOU of the iol ecosystem; Payment acceptance and payments in SINHRO; Chats. Enhanced media protection, including document photos. Fixes: Screen Edge-To-Edge issue on Android 15+.",
-    "tr": "Artık hesap doğrulaması (KYC) olmadan kullanılabilir: iol ekosisteminin IOU'su ile fatura ödemeleri; SINHRO'da ödeme kabulü ve ödemeler; Sohbetler. Belge fotoğrafları da dahil olmak üzere gelişmiş medya koruması. Düzeltmeler: Android 15+ sürümlerinde ekranın kenardan kenara uzanması sorunu.",
-    "ru": "Теперь доступны без верификации вашего аккаунта (KYC): Оплата счетов с использованием IOU экосистемы iol; Прием платежей и оплата в SINHRO; Чаты. Усилена защита медиа, включая фото документов. Исправления: экран от края до края отображался на Android 15+.",
-    "th": "ขณะนี้สามารถใช้งานได้โดยไม่ต้องยืนยันบัญชี (KYC): การชำระบิลโดยใช้ IOU ของระบบนิเวศ iol; การรับชำระเงินและการชำระเงินใน SINHRO; การแชท การปกป้องสื่อที่ได้รับการปรับปรุง รวมถึงภาพถ่ายเอกสาร การแก้ไข: ปัญหาขอบหน้าจอเต็มพื้นที่บน Android 15 ขึ้นไป"
+  "note": {
+    "ru": "Теперь в NiXeL можно сканировать и создавать любые QR, а не только для iol-apps. Он будет открывать веб сайты, если это ссылка/URL или показывать текст, который содержится в QR. Такие QR созданные в NiXeL будут полноценно приниматься и в других приложениях сканерах QR. Версия SDK Android увеличен до 16 (API level 36).",
+    "en": "Now in NiXeL you can scan and create any QR codes, not only for iol-apps. It will open websites if it is a link/URL or show text contained in the QR. Such QR codes created in NiXeL will be fully accepted in other QR scanner apps as well. Android SDK version increased to 16 (API level 36).",
+    "zh": "现在在 NiXeL 中可以扫描和创建任何 QR 码，而不仅仅是用于 iol-apps。如果是链接/URL，它将打开网站，或者显示 QR 码中包含的文本。在 NiXeL 中创建的这些 QR 码也将在其他 QR 扫描器应用程序中被完全接受。Android SDK 版本已提高至 16 (API level 36)。",
+    "tr": "Artık NiXeL'de yalnızca iol-apps için değil, her türlü QR kodunu tarayabilir ve oluşturabilirsiniz. Bir bağlantı/URL ise web sitelerini açacak veya QR içinde bulunan metni gösterecektir. NiXeL'de oluşturulan bu tür QR kodları diğer QR tarayıcı uygulamalarında da tamamen kabul edilecektir. Android SDK sürümü 16'ya yükseltildi (API level 36).",
+    "tt": "Хәзер NiXeL'дә тик iol-apps өчен генә түгел, теләсә нинди QR-кодларны да сканерларга һәм ясарга була. Әгәр бу сылтама/URL булса, ул веб-сайтларны ачачак яки QR-да булган текстны күрсәтәчәк. NiXeL'дә ясалган мондый QR-кодлар башка QR-сканер кушымталарында да тулысынча кабыл ителәчәк. Android SDK версиясе 16га кадәр арттырылды (API level 36).",
+    "th": "ตอนนี้ใน NiXeL คุณสามารถสแกนและสร้าง QR ใดก็ได้ ไม่เพียงแต่สำหรับ iol-apps เท่านั้น มันจะเปิดเว็บไซต์หากเป็นลิงก์/URL หรือแสดงข้อความที่อยู่ใน QR QR ที่สร้างขึ้นใน NiXeL เหล่านี้จะได้รับการยอมรับอย่างสมบูรณ์ในแอปพลิเคชันสแกนเนอร์ QR อื่นๆ ด้วย เวอร์ชัน SDK Android เพิ่มขึ้นเป็น 16 (API level 36)",
+    "ms": "Kini dalam NiXeL anda boleh mengimbas dan mencipta sebarang kod QR, bukan hanya untuk iol-apps. Ia akan membuka laman web jika ia adalah pautan/URL atau menunjukkan teks yang terkandung dalam QR. Kod QR sedemikian yang dicipta dalam NiXeL akan diterima sepenuhnya dalam aplikasi pengimbas QR yang lain juga. Versi SDK Android ditingkatkan kepada 16 (API level 36)."
   },
   "must": 1
 }
